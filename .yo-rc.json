@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "UML",
+    "packageVersion": "0.0.0",
+    "revealTheme": "white",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "sunye",
+    "githubRepository": "uml"
+  }
+}
