@@ -38,7 +38,8 @@ OCL stands for «Object Constraint Language». It is:
 ## Why do I need OCL?
 Sometimes, the UML lacks precision. Suppose the following class diagram:
 
-![](./resources/png/family.png)
+![](resources/png/family.png)
+
 
 - How do you specify that this class only considers people born after 1900?
 - And how do you specify that cycles are not allowed (i.e., that a person cannot be an ancestral of himself)?
@@ -48,11 +49,11 @@ Sometimes, the UML lacks precision. Suppose the following class diagram:
 
 - Comments, expressed in natural languages, are often very useful.
 - But sometimes, they are also ambiguous:
-![](../resources/png/marriage.png)
+![](resources/png/marriage.png)
 
 - Still, comments cannot avoid some situations:
 
-![](../resources/png/anna-bob-carol.png)
+![](resources/png/anna-bob-carol.png)
 
 ----
 
@@ -66,7 +67,7 @@ inv: self.wife->notEmpty() implies self.wife.husband = self and
     self.husband->notEmpty() implies self.husband.wife = self
 ```
 
-![](../resources/png/marriage.png)
+![](resources/png/marriage.png)
 
 ----
 ## Some Basic Principles
@@ -110,7 +111,7 @@ inv: self.wife->notEmpty() implies self.wife.husband = self and
 ----
 ## Exemple de modèle
 
-![](../resources/png/universite.png)
+![](resources/png/universite.png)
 
 
 ----
@@ -146,9 +147,9 @@ inv: self.wife->notEmpty() implies self.wife.husband = self and
 
 Invariants can be placed directly on the modeling element, between braces ({}) or on a comment attached to it:
 
-![](../resources/png/person-inv.png)
+![](resources/png/person-inv.png)
 
-![](../resources/png/person-inv-note.png)
+![](resources/png/person-inv-note.png)
 
 ----
 ## Invariants: Textual Notation
@@ -179,7 +180,7 @@ context Person inv: self.name.size() > 0
 - In the case of a UML class, this means: attributes, query operations, and states (from attached state machines).
 
 
-![](../resources/png/person.png)
+![](resources/png/person.png)
 
 ```ocl
 context Person
@@ -227,7 +228,7 @@ context Etudiant inv: age > 16
 
 Il est possible de naviguer à travers les associations, en utilisant le rôle opposé:
 
-![](../resources/png/univ-departement.png)
+![](resources/png/univ-departement.png)
 
 ```ocl
  context Departement
@@ -245,7 +246,7 @@ Le type de la valeur de l'expression dépend de la cardinalité maximale du rôl
 Si égal à 1, alors c'est un classificateur. Si > 1, alors c'est une collection.
 
 
-![](../resources/png/matiere.png)
+![](resources/png/matiere.png)
 
 ```ocl
 context Matiere
@@ -298,7 +299,7 @@ inv:
     -- La moyenne des notes d'un étudiant est toujours supérieure à 4:
     self.note.valeur->average() > 4
 ```
-![](../resources/png/note.png)
+![](resources/png/note.png)
 
 
 ----
@@ -312,7 +313,7 @@ context Note inv:
     self.etudiant.age() >= 18
     self.matiere.heures > 3
 ```
-![](../resources/png/note.png)
+![](resources/png/note.png)
 
 
 ----
@@ -332,7 +333,7 @@ context Universite
     inv: self.etudiants->exists(each | each.nom = "Martin")
 ```
 
-![](../resources/png/asso-qualifiee.png)
+![](resources/png/asso-qualifiee.png)
 
 
 ----
@@ -399,7 +400,7 @@ context <class-name>::<prop-name>: <type>
     init: <ocl-expression>
 ```
 Example:
-```
+```ocl
 context Enseignant::salaire : Integer
     init: 800
 ```
@@ -432,7 +433,7 @@ context Personne::celibataire : Boolean
 - Specification of query operation body.
 
 Example:
-```
+```ocl
 context Universite::enseignants() : Set(Enseignant)
 body:
     self.departements.enseignants->asSet()
@@ -545,7 +546,7 @@ a.b@pre.c@pre
 ----
 ## Previous Values (2/2)
 
-![](../resources/png/atpre.png)
+![](resources/png/atpre.png)
 
 ```ocl
 a.b@pre.c -- la nouvelle valeur de b1.c,  c3		
@@ -600,7 +601,7 @@ Notation
 Les types sont optionnels. L'ordre des composantes n'est pas important:
 
 **Expressions équivalentes:**
-```
+```ocl
 Tuple {name: String = 'Martin,' age: Integer = 42}
 Tuple {name = 'Martin,' age = 42}
 Tuple {age = 42, name = 'Martin'}
@@ -1310,7 +1311,7 @@ source->closure(v : Type | expression-with-v)
 ----
  ## Closure: Examples
 
- ![](../resources/png/family.png)
+ ![](resources/png/family.png)
 
 ```ocl
 context Personne
