@@ -1,1 +1,8 @@
-["index.md"]
+[
+  "index.md",
+  "usecases.md",
+  "basis.md",
+  "structural.md",
+  "behavior.md",
+  "ocl.md"
+]

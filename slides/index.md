@@ -1,4 +1,10 @@
 
-# UML
+# The Unified Modeling Language
 
-<img src="resources/uml-logo.png" width="40%">
+![](../resources/uml-logo.png)
+
+----
+
+## Disclaimer
+
+This presentation is about the UML notation. This is not a modeling course.
