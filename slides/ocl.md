@@ -38,7 +38,7 @@ OCL stands for «Object Constraint Language». It is:
 ## Why do I need OCL?
 Sometimes, the UML lacks precision. Suppose the following class diagram:
 
-![](../resources/png/family.png)
+![](./resources/png/family.png)
 
 - How do you specify that this class only considers people born after 1900?
 - And how do you specify that cycles are not allowed (i.e., that a person cannot be an ancestral of himself)?
