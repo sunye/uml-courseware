@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="163.5 68.904524 268 211.09548" width="268pt" height="211.09548pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.4.3 
+    <dc:date>2017-10-17 06:14:36 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" width="268" height="211.09548"/>
+    <g>
+      <title>Layer 1</title>
+      <rect x="164" y="243.5" width="99" height="36" fill="white"/>
+      <rect x="164" y="243.5" width="99" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(169 254.5)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="28.489258" y="11" textLength="32.021484">Class</tspan>
+      </text>
+      <line x1="213.5" y1="243.5" x2="323.834" y2="98.25018" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="332" y="69.5" width="99" height="36" fill="white"/>
+      <rect x="332" y="69.5" width="99" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(337 80.5)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="17.485352" y="11" textLength="42.685547">Classifi</tspan>
+        <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="60.1709" y="11" textLength="11.34375">er</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
