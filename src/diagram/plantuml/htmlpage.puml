@@ -1,0 +1,12 @@
+class HTMLPage {
++ title : String {readOnly}
++ /size : Integer
+~ version : Integer [0..1]
+# contents : String
+- visibility : Boolean = true
+- tags : String [1..5]
+===
++ render()
++ save()
+- optimize()
+}

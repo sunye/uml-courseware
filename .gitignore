@@ -1,6 +1,18 @@
-node_modules
-bower_components
-dist
 *.log
 .sass-cache
 /index.html
+.idea
+build
+out
+target
+*.out
+*.aux
+*.synctex.gz
+.DS_Store
+Gemfile.lock
+.bundle
+.vscode
+
+# PlantUML generated files:
+
+diag-*.png

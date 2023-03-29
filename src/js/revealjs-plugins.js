@@ -1,0 +1,1 @@
+{src: 'mde-languages.min.js', async:true, callback: function() { hljs.initHighlightingOnLoad(); }}

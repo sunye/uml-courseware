@@ -1,0 +1,34 @@
+include::../common/commons.adoc[]
+= First Level Slide
+
+:diagram: AAA
+
+ifeval::["{lang}" == "fr"]
+:diagram: Diagramme de classes 
+endif::[]
+
+ifeval::["{lang}" == "pt"]
+:diagram: Diagrama de classes 
+endif::[]
+
+ifeval::["{lang}" == "en"]
+:diagram: Class Diagram
+endif::[]
+
+
+== Second level slide
+
+Name: {diagram} 
+
+
+== Notation
+
+.For each UML class, create a Java class.
+[plantuml]
+----
+include::{plantumldir}/htmlpage.puml[]
+----
+
+== More Notation 
+
+year: {localyear}
